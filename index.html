@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Latest posts</title>
+    <link rel="icon" href="/favicon.ico" />
+    <script src="client.js"></script>
+  </head>
+  <body>
+    <div>
+      <div id="main-screen">
+        <header class="bg-white shadow">
+          <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between">
+              <h1 class="text-3xl font-bold leading-tight text-gray-900">
+                Latest posts
+              </h1>
+              <p class="underline cursor-pointer mt-2">
+                <a href="#" id="add-blog">Add a new blog</a>
+              </p>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <div class="px-4 py-4 sm:px-0">
+              <div class="border-4 rounded-lg">
+                <div class="flex flex-col">
+                  <div
+                    class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8"
+                  >
+                    <div
+                      class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg"
+                    >
+                      <table class="min-w-full">
+                        <thead>
+                          <tr>
+                            <th
+                              class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+                            >
+                              Post
+                            </th>
+                            <th
+                              class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"
+                            >
+                              Date
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="bg-white"></tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <div class="hidden" id="form">
+        <header class="bg-white shadow">
+          <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between">
+              <h1 class="text-3xl font-bold leading-tight text-gray-900">
+                Add a new blog
+              </h1>
+              <p class="underline cursor-pointer mt-2">
+                <a href="#" id="back">Back</a>
+              </p>
+            </div>
+          </div>
+        </header>
+        <div>
+          <div class="max-w-3xl mx-auto px-6 mt-8">
+            <form class="mt-5 md:mt-0 md:col-span-2" action="" method="POST">
+              <div class="shadow sm:rounded-md sm:overflow-hidden">
+                <div class="px-4 py-5 bg-white sm:p-6">
+                  <label
+                    class="block text-sm font-medium leading-5 text-gray-700"
+                  >
+                    Feed URL
+                  </label>
+                  <input
+                    type="url"
+                    required
+                    id="feedurl"
+                    class="mb-5 mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                    placeholder="https://www.example.com/feed"
+                  />
+                </div>
+                <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                  <span class="inline-flex rounded-md shadow-sm">
+                    <button
+                      type="submit"
+                      class="inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition duration-150 ease-in-out"
+                    >
+                      Add
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

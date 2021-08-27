@@ -1,0 +1,29 @@
+{
+  "name": "electron-rss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felicityandherdragon/electron-rss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felicityandherdragon/electron-rss/issues"
+  },
+  "homepage": "https://github.com/felicityandherdragon/electron-rss#readme",
+  "devDependencies": {
+    "electron": "^13.2.2",
+    "electron-reloader": "^1.2.1"
+  },
+  "dependencies": {
+    "electron-store": "^8.0.0",
+    "rss-parser": "^3.12.0"
+  }
+}
